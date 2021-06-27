@@ -62,6 +62,20 @@
       <!-- to read this 1.0-0 = 1= at least 1 digit on the left and 0-0 no digit ont hte right-->
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Miles</label>
+      <input
+        class="form-control"
+        (input)="onMilesChange($any($event.target).value)"
+      />
+    </div>
+    <div class="col">
+      <label><b>kilometers</b></label>
+      <div>{{ miles | co nverter }}</div>
+    </div>
+  </div>
 </div>
 
 <!-- this object is use to debug the object and see tje value inside -->
