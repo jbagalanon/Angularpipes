@@ -11,6 +11,12 @@ export class AppComponent {
   amount!: number;
   height!: number;
 
+  car = {
+    make: 'toyota',
+    model: 'city',
+    year: 2008,
+  };
+
   onNameChange(value: string) {
     this.name = value;
   }
