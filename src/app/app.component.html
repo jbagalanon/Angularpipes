@@ -33,4 +33,32 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Amount</label>
+      <input
+        class="form-control"
+        (input)="onAmountChange($any($event.target).value)"
+      />
+    </div>
+    <div class="col">
+      <label><b>Receiver Date</b></label>
+      <div>{{ amount | currency: "KRW" }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Height</label>
+      <input
+        class="form-control"
+        (input)="onHeightChange($any($event.target).value)"
+      />
+    </div>
+    <div class="col">
+      <label><b>Height</b></label>
+      <div>{{ height|  }}</div>
+    </div>
+  </div>
 </div>
