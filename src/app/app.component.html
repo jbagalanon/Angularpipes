@@ -58,7 +58,8 @@
     </div>
     <div class="col">
       <label><b>Height</b></label>
-      <div>{{ height|  }}</div>
+      <div>{{ height | number: "1.2-3" }}</div>
+      <!-- to read this 1.0-0 = 1= at least 1 digit on the left and 0-0 no digit ont hte right-->
     </div>
   </div>
 </div>
